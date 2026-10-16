@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Administrador - Pelotão</title>
+<meta name="robots" content="noindex"><link rel="stylesheet" href="style.css"></head><body>
+<h1>🎖️ Painel do Administrador</h1>
+<div id="login" class="card"><div class="row"><input id="email" type="email" placeholder="E-mail"><input id="senha" type="password" placeholder="Senha"><button id="entrar">Entrar</button></div><p id="lmsg" class="mut"></p></div>
+<div id="app" class="hide">
+  <div class="row"><button class="s" data-tab="painel">Painel</button><button class="s" data-tab="soldados">Soldados</button><button class="s" id="sair">Sair</button></div>
+  <div id="painel"></div>
+  <div id="soldados" class="hide"><div class="card"><b>Soldados</b> <span class="mut">(um por linha)</span>
+    <textarea id="lista" style="min-height:200px"></textarea>
+    <p class="row">Tamanho da esquadra: <input id="sz" type="number" min="1" value="5" style="width:70px"></p>
+    <button id="salvar">Salvar lista</button> <span id="msg" class="mut"></span></div></div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script><script src="common.js"></script><script src="admin.js"></script>
+</body></html>
